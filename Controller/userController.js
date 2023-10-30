@@ -13,6 +13,6 @@ const addEmployee=async (req,res,next)=>{
         address:empdata.address
     })
     await newEmployee.save()
-    res.status(200).json({ message: "Data received successfully" });
+    res.status(200).json({ status:true,message: "Data received successfully" });
 }
 module.exports={home,addEmployee}
